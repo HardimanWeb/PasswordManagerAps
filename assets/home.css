@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    padding: 6px;
+    background-color: #277BC0;
+}
+header h1{
+    color: white;
+    margin-left: 15px;
+}
+span{
+    color: #FFC23C;
+    margin-left: 8px;
+}
+.container-input{
+    background: #F8F9FA;
+    width: 60%;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 0 25px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.container-input h2{
+    text-align: center;
+}
+.input input{
+   width: 100%;
+   padding: 14px;
+   border-radius: 8px;
+   border: 1px solid #5F30E2;
+   margin-bottom: 10px;
+   outline: none;
+   font-family: Raleway, sans-serif;
+   font-size: 18px;
+   background-color: #F5F1FF;
+}
+
+.container-input form button{
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #5F30E2;
+    width: 100%;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    background-color: #5F30E2;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+form span{
+    color: white;
+    font-weight:600;
+}
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+.search_section{
+    background: #F8F9FA;
+    width: 60%;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 0 25px;
+}
+.search_section h2{
+    text-align: center;
+}
+.searchbook{
+    display: flex;
+    margin-bottom: 30px;
+}
+.searchbook input{
+  flex-basis: 70%;
+   width: 100%;
+   padding: 12px;
+   border-radius: 8px;
+   border: 1px solid #5F30E2;
+   outline: none;
+   font-family: Raleway, sans-serif;
+   font-size: 16px;
+   background-color: #F5F1FF;
+}
+.searchbook label{
+    flex-basis: 10%;
+    margin-left: 15px;
+   font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.searchbook button{
+    flex-basis: 20%;
+    font-family: Raleway, sans-serif;
+    border-radius: 16px;
+    border: 1px solid #5F30E2;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.searchbook button:hover {
+    background: #5F30E2;
+    color: white;
+}
+.book_shelf{
+    width: 60%;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F8F9FA;
+}
+
+.book_shelf > .book_list {
+    padding: 10px;
+}
+
+.book_shelf > .book_list > .book_item {
+    border: 1px solid #5F30E2;
+    padding: 8px 16px 16px 16px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 6px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 7px;
+    font-size: 15px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .orange {
+    background-color: orangered;
+    color: white;
+}
+
+#idUpdate, #id_account, #idUser ,#article_id{
+    display: none;
+}
+.orange a {
+    color: #FFFFFF;
+    text-decoration: none;
+}

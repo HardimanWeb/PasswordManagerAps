@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Password Manager Apss | With Inovation Encrypt Vigenere Cipher
+    </title>
+    <link rel="stylesheet" href="../assets/home.css" />
+  </head>
+  <body>
+    <header id="#">
+      <h1>Password Manager<span>Apps</span></h1>
+    </header>
+    <main>
+      <section class="container-input shadow">
+        <label id="idUser"
+          >Your User ID: <span for="userId" id="userId"></span
+        ></label>
+        <h2 id="titleForm">Masukkan Akun Yang Akan Disimpan</h2>
+        <form
+          id="inputAccount"
+          method="POST"
+          action="http://localhost:5000/accounts"
+          enctype="multipart/form-data"
+        >
+          <div class="input">
+            <label for="inputService">Nama Layanan Akun</label><br />
+            <input id="service_name" name="service_name" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputUsername">Username Akun</label><br />
+            <input id="username" name="username" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputPasswordAccount">Kata Sandi</label><br />
+            <input id="password" name="password" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputCategory">Kategori Akun</label><br />
+            <input id="category" name="category" type="text" required />
+          </div>
+          <button id="bookSubmit" type="submit">
+            Masukkan ke Daftar List <span>Akun</span>
+          </button>
+        </form>
+
+        <!--  -->
+        <h2 style="display: none">Isi Data Akun Yang Akan DiUpdate</h2>
+        <form
+          id="inputUpdateAccount"
+          method="PUT"
+          action="http://localhost:5000/accounts"
+          enctype="multipart/form-data"
+          style="display: none"
+        >
+          <label for="inputId" id="idUpdate"></label><br />
+          <div class="input">
+            <label for="inputService">Nama Layanan Akun</label><br />
+            <input
+              id="Update_service_name"
+              name="service_name"
+              type="text"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="inputUsername">Username Akun</label><br />
+            <input id="update_username" name="username" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputPasswordAccount">Kata Sandi</label><br />
+            <input id="update_password" name="password" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputCategory">Kategori Akun</label><br />
+            <input id="update_category" name="category" type="text" required />
+          </div>
+          <button id="updateButton" type="submit">
+            Update Daftar List <span>Akun</span>
+          </button>
+        </form>
+      </section>
+      <section class="search_section shadow">
+        <h2>Cari Akun (Opsional)</h2>
+        <form id="searchBook" class="searchbook">
+          <label for="searchBookTitle">Service Name</label>
+          <input id="searchTitle" type="text" />
+          <button id="searchSubmit" type="submit">Cari</button>
+        </form>
+      </section>
+      <section class="book_shelf">
+        <h2 id="category_name">Akun</h2>
+        <div id="managerPasswordList" class="book_list"></div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../assets/home.js" type="text/javascript"></script>
+  </body>
+</html>
